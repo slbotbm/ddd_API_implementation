@@ -1,9 +1,10 @@
-from enums import TaskStatus, UserStatus
 from datetime import datetime
 from pydantic import BaseModel, EmailStr, field_validator
 from typing import List, Union
 import phonenumbers
 
+from domain.user.user_status import UserStatus
+from domain.task.task_status import TaskStatus
 
 class UserBase(BaseModel):
     name: str
