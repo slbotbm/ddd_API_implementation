@@ -3,9 +3,9 @@ from typing import Annotated
 from sqlalchemy.orm import Session
 
 import schemas
-from domain.shared import database
 
 # Domain
+from domain.shared import database
 from domain.user.user_status import UserStatus
 from domain.task.task_status import TaskStatus
 
